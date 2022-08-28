@@ -35,7 +35,7 @@ public class CHayki {
     @GetMapping("/detail/{id}")
     public ResponseEntity<Hayki> getById(@PathVariable("id") int id){
         if(!sHayki.existsById(id))
-            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new Mensaje("no existe el id"), HttpStatus.NOT_FOUND);
         Hayki hayki = sHayki.getOne(id).get();
         return new ResponseEntity(hayki, HttpStatus.OK);
     }

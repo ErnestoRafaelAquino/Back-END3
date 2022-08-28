@@ -32,10 +32,6 @@ public class Hayki {
         this.porcentajeH = porcentajeH;
         this.imgH = imgH;
     }
-
-    public Hayki(String nombreH, int porcentajeH) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
     //Getters and Setters
 
@@ -70,5 +66,5 @@ public class Hayki {
     public void setImgH(String imgH) {
         this.imgH = imgH;
     }
-    
+
 }
