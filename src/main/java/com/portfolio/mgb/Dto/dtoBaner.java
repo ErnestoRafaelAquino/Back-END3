@@ -10,42 +10,41 @@ import javax.validation.constraints.NotBlank;
  *
  * @author Ernesto Aquino
  */
-
-public class dtoHayki {
+public class dtoBaner {
     @NotBlank
-    private String nombreH;
+    private String profesionH;
     @NotBlank
-    private int porcentajeH;
+    private String acercaH;
     @NotBlank
     private String imgH;
     
-    //constructor
-
-    public dtoHayki() {
-    }
-
-    public dtoHayki(String nombreH, int porcentajeH, String imgH) {
-        this.nombreH = nombreH;
-        this.porcentajeH = porcentajeH;
-        this.imgH = imgH;
+    //constructor vacio
+    public dtoBaner() {
     }
     
+    //constructor 
+
+    public dtoBaner(String profesionH, String acercaH, String imgH) {
+        this.profesionH = profesionH;
+        this.acercaH = acercaH;
+        this.imgH = imgH;
+    }
     //GettER and Setter
 
-    public String getNombreH() {
-        return nombreH;
+    public String getProfesionH() {
+        return profesionH;
     }
 
-    public void setNombreH(String nombreH) {
-        this.nombreH = nombreH;
+    public void setProfesionH(String profesionH) {
+        this.profesionH = profesionH;
     }
 
-    public int getPorcentajeH() {
-        return porcentajeH;
+    public String getAcercaH() {
+        return acercaH;
     }
 
-    public void setPorcentajeH(int porcentajeH) {
-        this.porcentajeH = porcentajeH;
+    public void setAcercaH(String acercaH) {
+        this.acercaH = acercaH;
     }
 
     public String getImgH() {
@@ -55,6 +54,5 @@ public class dtoHayki {
     public void setImgH(String imgH) {
         this.imgH = imgH;
     }
-
     
 }

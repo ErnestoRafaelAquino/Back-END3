@@ -19,7 +19,7 @@ public class Hayki {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreH;
-    private String porcentajeH;
+    private int porcentajeH;
     private String imgH;
     
     //constructor
@@ -27,13 +27,13 @@ public class Hayki {
     public Hayki() {
     }
 
-    public Hayki(String nombreH, String porcentajeH, String imgH) {
+    public Hayki(String nombreH, int porcentajeH, String imgH) {
         this.nombreH = nombreH;
         this.porcentajeH = porcentajeH;
         this.imgH = imgH;
     }
 
-    public Hayki(String nombreH, String porcentajeH) {
+    public Hayki(String nombreH, int porcentajeH) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
@@ -55,11 +55,11 @@ public class Hayki {
         this.nombreH = nombreH;
     }
 
-    public String getPorcentajeH() {
+    public int getPorcentajeH() {
         return porcentajeH;
     }
 
-    public void setPorcentajeH(String porcentajeH) {
+    public void setPorcentajeH(int porcentajeH) {
         this.porcentajeH = porcentajeH;
     }
 

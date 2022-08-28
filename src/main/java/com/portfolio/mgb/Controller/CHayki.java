@@ -79,7 +79,8 @@ public class CHayki {
         
         Hayki hayki = sHayki.getOne(id).get();
         hayki.setNombreH(dtohayki.getNombreH());
-        hayki.setPorcentajeH((dtohayki.getPorcentajeH()));
+        hayki.setPorcentajeH(dtohayki.getPorcentajeH());
+        hayki.setImgH(dtohayki.getImgH());
         
         sHayki.save(hayki);
         return new ResponseEntity(new Mensaje("Hayki actualizada"), HttpStatus.OK);
