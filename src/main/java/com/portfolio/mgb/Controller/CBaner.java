@@ -88,6 +88,7 @@ public class CBaner {
         Baner baner = sBaner.getOne(id).get();
         baner.setProfesionH(dtobaner.getProfesionH());
         baner.setAcercaH(dtobaner.getAcercaH());
+        baner.setImgH(dtobaner.getImgH());
         
         sBaner.save(baner);
         return new ResponseEntity(new Mensaje("baner actualizada"), HttpStatus.OK);
