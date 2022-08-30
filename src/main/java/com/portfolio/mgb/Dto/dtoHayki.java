@@ -55,6 +55,5 @@ public class dtoHayki {
     public void setImgH(String imgH) {
         this.imgH = imgH;
     }
- 
     
 }
